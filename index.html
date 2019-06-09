@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video games Webpage</title>
+  </head>
+  <body>
+    <script>
+      /* These are the links to the games, you can visit them if you want! */
+
+      const cartGameURL =
+        "https://alexcabezas2018.github.io/Exercise1-VD/index.html";
+      const froggerGameURL =
+        "https://alexcabezas2018.github.io/Exercise2.VD/index.html";
+      const superMarioURL = "https://alexcabezas2018.github.io/Exercise3-VD/";
+      const batmanURL = "https://elianaaliz.github.io/ProyectoFinal_Batman/";
+
+      function redirectToPage(id) {
+        let toRedirect = "";
+        switch (id) {
+          case "cartGame":
+            toRedirect = cartGameURL;
+            break;
+          case "froggerGame":
+            toRedirect = froggerGameURL;
+            break;
+          case "superMarioGame":
+            toRedirect = superMarioURL;
+            break;
+          case "batmanGame":
+            toRedirect = batmanURL;
+            break;
+        }
+
+        window.location = toRedirect;
+      }
+    </script>
+
+    <h1>Wellcome to my video games portfolio!</h1>
+    <p>
+      Hello! I am Alex and this is a webpage which collects all the projects I
+      have made for a subject called "Video games development with Web
+      technologies", imparted at the Complutense University of Madrid. The games
+      are made with HTML, CSS and JavaScript. Feel free to watch the code of
+      each game by inspecting them in your browser!
+    </p>
+    <div class="selection-text">
+      <b> Please, select one of my projects and enjoy it! </b>
+    </div>
+    <div class="selection-container">
+      <ul class="selection-list">
+        <li class="selection-item" onclick="redirectToPage('cartGame')">
+          Project 1: Card Game
+        </li>
+        <li class="selection-item" onclick="redirectToPage('froggerGame')">
+          Project 2: Frogger
+        </li>
+        <li class="selection-item" onclick="redirectToPage('superMarioGame')">
+          Project 3: Super Mario
+        </li>
+        <li class="selection-item" onclick="redirectToPage('batmanGame')">
+          Final Project: Batman
+        </li>
+      </ul>
+    </div>
+    <div class="image-text">
+      <b>Here are some captures of the projects</b>
+    </div>
+    <div class="image-container">
+      <div class="row">
+        <div class="column">
+          <a href="images/cart-game-final.png">
+            <img src="images/cart-game-final.png" alt="image1-cart-game" />
+            <div class="desc">Tiles matcher</div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="images/frogger-game-final.png">
+            <img src="images/frogger-game-final.png" alt="image2-frogger" />
+            <div class="desc">Frogger</div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="images/super-mario-game-final.png">
+            <img
+              src="images/super-mario-game-final.png"
+              alt="image3-super-mario"
+            />
+            <div class="desc" href="images/super-mario-game-final.png">
+              Super Mario
+            </div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="images/batman-game-final.png">
+            <img src="images/batman-game-final.png" alt="image4-batman" />
+            <div class="desc">Batman</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="info-text">
+      <b> Want to know more about me? </b> Check
+      <a href="[Web page link]">My Website</a> !
+    </div>
+  </body>
+</html>

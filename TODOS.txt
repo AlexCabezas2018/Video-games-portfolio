@@ -1,0 +1,2 @@
+- Headers para los juegos, en lugar de los textos
+- Añadid contact-me
